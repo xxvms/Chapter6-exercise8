@@ -1,10 +1,10 @@
 #include "serialNo.h"
 #include <iostream>
 
-int serialNo::counter = 1;
 
 serialNo::serialNo()
 {
+	static int counter = 1;
 	serialNumber = counter;
 	counter++;
 
